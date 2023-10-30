@@ -1,0 +1,58 @@
+.myself-container {
+    background-color: #f0f0f0; /* Light background color */
+    padding: 2rem;
+    color: black; /* Text color */
+    width: 90%; /* 80% of the box width for larger screens */
+    margin-left: 35px; /* Center the box horizontally */
+    border-radius: 20px; /* Add rounded corners */
+    text-align: left; /* Text alignment */
+  }
+  .silpa{
+      text-align: center;
+      color:black bold;
+     
+  }
+  
+  .myself-section {
+    margin-bottom: 2rem;
+  }
+  
+  .myself-heading {
+    font-size: 10px; /* Adjust the size as needed */
+    color: rgb(83, 83, 94); /* Blue color for headings */
+    align-items: left; /* Align headings to the left */
+  }
+  
+  .myself-paragraph {
+    text-align: left;
+    text-align:end;
+    margin-left: 10px; /* Reset margin for paragraphs */
+    font-size: 40px;
+  }
+  .headings{
+      /* color: rgb(68, 68, 182); */
+      color: rgb(68, 68, 182);
+      align-items: left;
+  }
+  .paragraph-text{
+   
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px; /* Add margin on the right side as well */
+        font-size: 20px;
+    
+      
+  }
+  /* Media Query for Smaller Screens (e.g., mobile) */
+  @media (max-width: 600px) {
+    .myself-heading {
+      font-size: 1.2rem; /* Adjust text size for smaller screens */
+    }
+    .myself-container {
+      width: 75%; /* Adjust width for smaller screens */
+    }
+    .myself-paragraph{
+        font-size: 20px;
+    }
+  }
+  

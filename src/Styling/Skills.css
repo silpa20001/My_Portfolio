@@ -1,0 +1,97 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill {
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+    width: 90%;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .skills-text{
+    align-items: center;
+    color: black ;
+    font-size: 20px bold;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+  }
+  
+  .skill:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  /* Add a class for the second skill */
+  /* .skill:nth-child(1) {
+    flex-direction: row; 
+  } */
+  .skill:nth-child(2) {
+    flex-direction: row; /* Set the second skill to have text on the right */
+  }
+  
+  .left img, .right img {
+    width: 150px; /* Adjust the image size as needed */
+    height: 150px;
+    border-radius: 20px;
+  }
+  
+  .right, .left {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .right h2, .left h2 {
+    font-size: 18px;
+  }
+  
+  .right p, .left p {
+    font-size: 16px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .skill:hover {
+        transform: scale(1.05);
+      }
+      
+      .skill:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      
+      /* Add a class for the second skill */
+      /* .skill:nth-child(1) {
+        flex-direction: row; 
+      } */
+      .skill:nth-child(2) {
+        flex-direction: row; /* Set the second skill to have text on the right */
+      }
+      
+      .left img, .right img {
+        width: 150px; /* Adjust the image size as needed */
+        height: 150px;
+      }
+      
+      .right, .left {
+        flex: 1;
+        padding: 10px;
+      }
+      
+      .right h2, .left h2 {
+        font-size: 18px;
+      }
+      
+      .right p, .left p {
+        font-size: 14px;
+      }
+  }
+  

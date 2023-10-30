@@ -1,0 +1,40 @@
+/* Footer.css */
+
+.footer {
+    background-color: rgb(169, 203, 247);
+    color: rgb(20, 18, 18);
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 2px solid rgb(243, 234, 234);
+    position: relative; /* Add this line */
+    overflow: hidden;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Style for the up arrow button */
+  .scroll-to-top-button {
+    position: absolute;
+    top: 50%;
+    right: 5rem; /* Adjust the right distance as needed */
+    transform: translateY(-50%);
+    background-color: transparent;
+  
+    border: none;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .scroll-to-top-button {
+      top: auto; /* Reset the top position */
+      bottom: 1rem; /* Place it at the bottom right corner */
+      transform: translateY(0); /* Reset the transform */
+      right: 0rem; /* Place it at the right corner */
+    }
+  }
+  
+  /* Add more styles for the button as needed */
+  

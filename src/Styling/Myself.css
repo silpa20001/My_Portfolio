@@ -1,0 +1,124 @@
+.about {
+    background-color: white;
+    padding: 4rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .about-content {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+  
+  .about-image {
+    width: 30%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .about-description {
+    width: calc(70% - 20px); /* Adjust as needed */
+    padding:  0 rem;
+    margin-left: 1 px; /* Add margin between image and description */
+    margin-right: 1 px;
+  }
+  
+  h1 {
+    font-size: 1 rem; /* Adjust as needed */
+    margin-top: 5px ; /* Add margin for larger screens */
+  }
+  
+  .info-box {
+    background-color: #f0f0f0;
+    padding: 20px; /* Increase the padding */
+    border-radius: 10px;
+    margin-left: 0px;
+    width: 100%; /* Adjust as needed */
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 0 px;
+    margin-right: 1px;
+  }
+  
+  .info-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(68, 68, 182);
+  }
+  
+  .info-text {
+    font-size: 1rem;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right:10px ;
+  
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 1000px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 0 px;
+    }
+  
+    .about-image{
+        align-items: center;
+    }
+    .about-description {
+      width: 95%;
+      padding: 5px ;
+      text-align: left;
+      margin-bottom: 10px;
+      margin-left: 0px ;
+      margin-top: 10px;
+    }
+  
+    .profile-image {
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+    
+    h1 {
+      font-size: 20px; /* Adjust as needed */
+      margin: 7px; /* Reset margin for smaller screens */
+      width: 80%;
+    }
+  
+    .info-icon {
+      font-size: 20px;
+    }
+  
+    .info-box {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
